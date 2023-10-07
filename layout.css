@@ -1,0 +1,54 @@
+body {
+    background-image: url("lines.png");
+}
+
+.form {
+    width: 500px;
+    height:auto;
+    margin: 100px 200px auto 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+legend {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.element {
+    text-align: center;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.inline {
+    display: inline-block;
+    width: 100px;
+    text-wrap: wrap;
+    padding: 5px;
+}
+
+input, textarea, select, button {
+    padding: 5px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input:focus{
+    background-color: rgb(225, 223, 231);
+}
+
+textarea:focus {
+    background-color: rgb(225, 223, 231);
+} 
+
+select:focus {
+    background-color: rgb(225, 223, 231);
+}
+
+

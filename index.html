@@ -2,37 +2,46 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="layout.css">
         <title>Add a user</title>
     </head>
     <body>
-        <form action="form-handling-url" method="post">
+        <form class="form" action="form-handling-url" method="post">
             <fieldset>
                 <legend>Add user</legend>
 
-                <div>
-                    <label for="fistName">First name</label>
+                <div class="element">
+                    <label for="fistName">First name:</label> </br>
                     <input type="text" id="firstName" name="first_name">
                 </div>
 
-                <div>
-                    <label for="lastName">Last name</label>
+                <div class="element">
+                    <label for="lastName">Last name:</label> </br>
                     <input type="text" id="lastName" name="last_name">
                 </div>
 
-                <div>
-                    <label for="email">Email</label>
+                <div class="element">
+                    <label for="email">Email:</label> </br>
                     <input type="email" id="email" name="email_address">
                 </div>
 
-                <div>
-                    <label for="status">Status</label>
-                    <select id="status" name="user_status">
-                        <option value="student">Student</option>
-                        <option value="teacher">Teacher</option>
-                        <option value="guest">Guest</option>
-                    </select>
+                <div class="element">
+                    <div class="inline">
+                     <label for="status">Status:</label> </br>
+                        <select id="status" name="user_status">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+
+                    <div class="inline">
+                        <label for="date">Date:</label> </br>
+                        <input type="date" id="date" name="date">
+                    </div>
                 </div>
-                <div>
+
+                <div class="element">
                     <p>Choose your favorite programming language:</p>
 
                     <input type="radio" id="html" name="language" value="html">
@@ -45,31 +54,26 @@
                     <label for="javaScript">JavaScript</label>
                 </div>
 
-                <div>
-                    <label for="comments">Comments</label>
+                <div class="element">
+                    <label for="comments">Comments:</label> </br>
                     <textarea id="comments" name="comments"></textarea>
                 </div>
 
-                <div>
-                    <label for="date">Current date</label>
-                    <input type="date" id="date" name="date">
+                <div class="element">
+                    <div class="inline">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">sign up for news</label>
+                    </div>
+
+                    <div class="inline">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">agree to terms</label>
+                    </div>
                 </div>
 
-                <div>
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Sign up for newsletter</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="terms" name="terms">
-                    <label for="terms">Agree to terms and conditions</label>
-                </div>
-
-                <div>
+                <div class="element">
                     <button type="submit">Submit</button>
                 </div>
-
-
             </fieldset>    
         </form>
     </body>
